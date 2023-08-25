@@ -30,6 +30,7 @@
 TARGET_OTA_ASSERT_DEVICE := AI2201
 
 # TWRP specific build flags
+TW_FRAMERATE := 165
 TW_NO_SCREEN_BLANK := true
 
 #
