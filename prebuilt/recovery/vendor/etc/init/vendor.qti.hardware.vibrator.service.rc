@@ -1,0 +1,24 @@
+on boot
+    start qti.vibrator
+
+on late-init
+    write /sys/class/leds/vibrator/trigger "transient"
+
+on late-fs
+    chmod 0666 /dev/aw8697_haptic
+    chown system system /dev/aac_richtap_dev
+    chown system system /dev/aw8697_haptic
+
+service qti.vibrator /system/bin/vendor.qti.hardware.vibrator.service
+    user root
+    group root input
+    disabled
+    setenv LD_LIBRARY_PATH /vendor/lib64:/vendor/lib:/system/lib64:/system/lib:/sbin
+    setenv RICHTAP_DEVICE_PATH  /dev/aw8697_haptic
+    setenv ENV_RICHTAP_CONFIG_PATH /odm/etc/aac_richtap.config
+    seclabel u:r:recovery:s0
+
+on property:twrp.modules.loaded=true
+    setprop sys.boot_completed 1
+    setprop vendor.haptic.calibrate.done 1
+

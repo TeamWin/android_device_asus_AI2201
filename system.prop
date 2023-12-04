@@ -1,0 +1,7 @@
+####################################
+# from vendor/asus/AI2201/aw_haptic/system.prop
+####################################
+#add for vibration intensity
+ro.vendor.asus.scale_low_max_amp=84
+ro.vendor.asus.scale_none_max_amp=168
+####################################

@@ -26,6 +26,9 @@
 # Inherit from common
 -include $(COMMON_PATH)/BoardConfigCommon.mk
 
+# Extras
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # Recovery
 TARGET_OTA_ASSERT_DEVICE := AI2201
 
