@@ -1,0 +1,10 @@
+on boot
+    start vibratorcontrol-hal-1-0
+
+service vibratorcontrol-hal-1-0 /system/bin/vendor.asus.hardware.vibratorcontrol@1.0-service
+    interface vendor.asus.hardware.vibratorcontrol@1.0::IVibratorcontrol default
+    user root
+    group root
+    disabled
+    setenv LD_LIBRARY_PATH /vendor/lib64:/vendor/lib:/system/lib64:/system/lib:/sbin
+    seclabel u:r:recovery:s0
