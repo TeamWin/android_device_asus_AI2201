@@ -1,4 +1,5 @@
 {
   "pushCert": "certificate version 0.1\npusher 1F5A13F735F72322 1705788366 -0500\npushee ssh://gerrit.twrp.me:29418/android_device_asus_AI2201\nnonce 1705788366-4E03800132526480C05690FF384138813D49D76B\n\n0000000000000000000000000000000000000000 3cd537b692500f55949551b5bb1ddd894e1a1826 refs/for/android-12.1%l\u003dCode-Review+2\n-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE8Y8VaNp/zKXnXxPsH1oT9zX3IyIFAmWsQ84ACgkQH1oT9zX3\nIyK0eBAAlgsrCEi0Iw50EKjW5knBtK5wgWr2ZsnL0bnf5dS3h9T2orJKoWMoZ4sU\nEJLy9DcXUatdyj43SZJZJjCW48YrVKnHzbNb/E9uNel7gl4QbUuAkSmhX7pfJ20u\n/8vxCnJFQzJfF1rOdJCo3XZiF56kF8o997T6uivlXX8onnVtgBuSHElb0b+8r/G4\nmPyRABIQyBqMK9NoAQViavaP9Hl/xhcWPYfCQyEfnUDG7eoYeDTCSCf1E4aAd1ac\nEvS/UufjtmKRbpwRr1ZmLkemNJSmonXvRh1DTFAvFklrnhXLzIaQ8EdVAzgiEjWA\nD6Dalaqkeuw5mT4VpsGvu4/7pu24bil1mI1ffsfkdQWj56pwTXI/CbJ5WznxeeG7\nRRe8Exvrq2pW5BukAsyjjvtjWTI+j8cXovapvI0zYyclQ6bks5kE9lV1yTQ9xZmQ\nnAvRWdwTxW9kba7nKqLUG4x/QSOctC+ENlHfGTvPMYRp982P8MB6jQ0/YJZdOPSJ\niJYnf8rbk45N+umzTMtZd7r/rkhVxbZza0yWdLS9+Oi0q5vcivhXDFiBnoYSDOpK\nPfsYLc2X7nQY+FA0XYmLSLkPlOnvWZQKI5qExaAqVwTJu54AI5eRpVsp3WU3ykf+\ng8uuUV1zhti1vqxdhhhf4rJFrG2e0NO60RcWzq/jKWEKh7ZbwkE\u003d\n\u003dJr31\n-----END PGP SIGNATURE-----\n",
-  "comments": []
+  "comments": [],
+  "submitRequirementResults": []
 }
