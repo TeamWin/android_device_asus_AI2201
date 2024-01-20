@@ -26,21 +26,27 @@
 # Inherit from common
 -include $(COMMON_PATH)/BoardConfigCommon.mk
 
+# Extras
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # Recovery
 TARGET_OTA_ASSERT_DEVICE := AI2201
 
 # TWRP specific build flags
 TW_FRAMERATE := 165
 TW_MAX_BRIGHTNESS := 1023
+TW_NO_BATTERY_PERCENT := true
 TW_NO_SCREEN_BLANK := true
 
 #
 # For local builds only
 #
 # Custom TWRP Versioning
-ifneq ($(wildcard device/common/version-info/.),)
-    # device version is optional - the default value is "0" if nothing is set in device tree
-    CUSTOM_TWRP_DEVICE_VERSION := 0
+ifneq ($(USE_CUSTOM_VERSION),)
+    ifneq ($(wildcard device/common/version-info/.),)
+        # device version is optional - the default value is "0" if nothing is set in device tree
+        CUSTOM_TWRP_DEVICE_VERSION := 0
+    endif
 endif
 #
 # end local build flags
